@@ -6,13 +6,20 @@
 /*   By: lil_grxpe <lil_grxpe@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/09 15:36:25 by lil_grxpe         #+#    #+#             */
-/*   Updated: 2026/11/09 16:05:30 by lil_grxpe        ###   ########.fr       */
+/*   Updated: 2026/11/09 17:50:57 by lil_grxpe        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-void ft_print_alphabet(void) {
-  for (char i = a; i = z; i++) {
-    write(1, &i, 1);
-  }
+
+void	ft_print_alphabet(void)
+{
+	char	i;
+
+	i = 'a';
+	while (i <= 'z')
+	{
+		write(1, &i, 1);
+		i++;
+	}
 }
